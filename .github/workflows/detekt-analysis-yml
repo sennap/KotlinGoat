@@ -30,8 +30,8 @@ jobs:
 
        - name: "detekt"
          uses: natiginfo/action-detekt-all@1.15.0-RC1
-         #with:
-         # args: --fail-fast --config detekt.yml
+         with:
+          args: --fail-fast --plugins detekt-report-sarif.jar
 
 #    - name: Perform CodeQL Analysis
 #      uses: github/codeql-action/analyze@v1
